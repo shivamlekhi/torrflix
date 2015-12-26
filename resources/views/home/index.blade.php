@@ -33,7 +33,7 @@
 						<!-- Director Name -->
 						<h5><a class="btn btn-xs btn-warning" style="font-weight: bolder;" href="{{'http://www.imdb.com/title/' . $movie->imdb_code}}"> Imdb Link</a></h5>
 						<!-- Heading -->
-						
+
 						<h4 style="margin-top: 10px;"><span>Rating</span>:</h4>
 						<!-- Writers -->
 						<h5 style="margin-top: 10px;">
@@ -48,6 +48,12 @@
 							<a href="{{ $link->url }}" class="btn btn-danger btn-xs">{{$link->quality}}</a>
 							@endforeach
 						</h5>
+						<!-- youtube-trailer -->
+						<h4 style="margin-top: 10px;"><span>Trailer</span>:</h4>
+						<h5 style="margin-top: 10px;">
+							<a href="#youtube-iframe-box" class="btn btn-info btn-xs">Watch Official Trailer</a>
+						</h5>
+
 					</div>
 				</div>
 			</div>
