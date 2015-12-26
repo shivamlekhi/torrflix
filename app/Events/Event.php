@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Events;
+namespace TorrFlix\Events;
 
 abstract class Event
 {

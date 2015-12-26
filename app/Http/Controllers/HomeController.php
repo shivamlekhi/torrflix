@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace TorrFlix\Http\Controllers;
 
-use App\Http\Requests;
+use TorrFlix\Http\Requests;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller

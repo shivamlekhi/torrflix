@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Jobs;
+namespace TorrFlix\Jobs;
 
 use Illuminate\Bus\Queueable;
 

@@ -151,10 +151,10 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        TorrFlix\Providers\AppServiceProvider::class,
+        TorrFlix\Providers\AuthServiceProvider::class,
+        TorrFlix\Providers\EventServiceProvider::class,
+        TorrFlix\Providers\RouteServiceProvider::class,
 
     ],
 

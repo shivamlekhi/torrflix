@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace TorrFlix\Http\Controllers\Auth;
 
-use App\User;
+use TorrFlix\User;
 use Validator;
-use App\Http\Controllers\Controller;
+use TorrFlix\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 
