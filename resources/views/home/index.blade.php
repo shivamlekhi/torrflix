@@ -51,7 +51,9 @@
 						<!-- youtube-trailer -->
 						<h4 style="margin-top: 10px;"><span>Trailer</span>:</h4>
 						<h5 style="margin-top: 10px;">
-							<a href="#youtube-iframe-box" class="btn btn-info btn-xs">Watch Official Trailer</a>
+							<a class="white-popup mfp-hide" href="#youtube-iframe-box" class="btn btn-info btn-xs">
+								Watch Official Trailer
+							</a>
 						</h5>
 
 					</div>
