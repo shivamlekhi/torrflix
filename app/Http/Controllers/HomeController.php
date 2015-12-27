@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace TorrFlix\Http\Controllers;
 
-use App\Http\Requests;
+use TorrFlix\Http\Requests;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -26,7 +26,7 @@ class HomeController extends Controller
     {
         $movies = json_decode(file_get_contents('https://yts.ag/api/v2/list_movies.json'))->{'data'};
 
-        // dd($movies->{'movies'}[0]);
+	 //dd($movies->{'movies'}[0]);
 
         foreach ($movies->{'movies'} as $movie) {
             $words = explode(" ",$movie->summary);

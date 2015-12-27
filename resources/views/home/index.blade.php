@@ -1,5 +1,10 @@
 @extends('layouts.master')
 
+<div class="video_overlay">
+	<div class="close_button">X</div>
+	<div id="player"></div>
+</div>
+
 @section('content')
 <!-- UI - X Starts -->
 @foreach($movies as $movie)
@@ -18,9 +23,9 @@
 					<!-- Details -->
 					<div class="ui-details clearfix">
 						<!-- Movie Name -->
-						<h2><a href="#">{{ $movie->title }}</a></h2>
+						<h2><a href="#" id="movie_title">{{ $movie->title }}</a></h2>
 						<!-- Labels -->
-						<a href="#" class="label">{{ $movie->year }}</a>
+						<a href="#" class="label" id="movie_year">{{ $movie->year }}</a>
 						<a href="#" class="label">{{ $movie->mpa_rating }}</a>
 						<a href="#" class="label">{{ $movie->runtime }}</a>
 						@foreach($movie->genres as $genre)
@@ -33,7 +38,7 @@
 						<!-- Director Name -->
 						<h5><a class="btn btn-xs btn-warning" style="font-weight: bolder;" href="{{'http://www.imdb.com/title/' . $movie->imdb_code}}"> Imdb Link</a></h5>
 						<!-- Heading -->
-						
+
 						<h4 style="margin-top: 10px;"><span>Rating</span>:</h4>
 						<!-- Writers -->
 						<h5 style="margin-top: 10px;">
@@ -48,6 +53,14 @@
 							<a href="{{ $link->url }}" class="btn btn-danger btn-xs">{{$link->quality}}</a>
 							@endforeach
 						</h5>
+						<!-- youtube-trailer -->
+						<h4 style="margin-top: 10px;"><span>Trailer</span>:</h4>
+						<h5 style="margin-top: 10px;">
+							<a class="btn btn-info btn-xs open_youtube_button">
+								Watch Official Trailer
+							</a>
+						</h5>
+
 					</div>
 				</div>
 			</div>

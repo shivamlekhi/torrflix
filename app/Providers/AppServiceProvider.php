@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace TorrFlix\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
