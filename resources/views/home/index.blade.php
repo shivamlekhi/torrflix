@@ -48,11 +48,24 @@
 						<!-- Heading -->
 						<h4><span>Torrents</span>:</h4>
 						<!-- Stars -->
-						<h5>
+						<h5 style="margin-top: 10px;">
 							@foreach($movie->torrents as $link)
 							<a href="{{ $link->url }}" class="btn btn-danger btn-xs">{{$link->quality}}</a>
 							@endforeach
 						</h5>
+
+						<!-- Magnet -->
+						<h4 style="margin-top: 10px;">
+							<span>Magnet</span>:
+						</h4>
+						<h5 style="margin-top: 10px;">
+							@foreach($movie->torrents as $link)
+								<a style="font-weight: bolder;" href="magnet:?xt=urn:btih:{{$link->hash}}{{$trackers}}" class="btn btn-danger btn-xs glyphicon glyphicon-magnet">
+									{{$link->quality}}
+								</a>
+							@endforeach
+						</h5>
+
 						<!-- youtube-trailer -->
 						<h4 style="margin-top: 10px;"><span>Trailer</span>:</h4>
 						<h5 style="margin-top: 10px;">
@@ -64,7 +77,7 @@
 					</div>
 				</div>
 			</div>
-		</div>	
+		</div>
 	</div>
 </div>
 @endforeach
