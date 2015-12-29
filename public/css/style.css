@@ -8,9 +8,40 @@
 	display: none;
 }
 
+nav {
+	border: none !important;
+}
+
+body, html, nav {
+	background: #2B2D42 !important;
+}
+
 .player {
 	height: 100%;
 	width: 100%;
+}
+
+.sidebar {
+	background: #1B1F23;
+	height: 100%;
+	padding-top: 10px;
+	color: #2DEFCF;
+	position: fixed;
+}
+
+.sidebar .logo {
+	height: 90px;
+	width: 100%;
+	font-family: "Bebas Neue";
+	text-align: center;
+	font-size: 48px;
+	line-height: 90px;
+}
+
+.sidebar .form-control, .sidebar .btn {
+	border: none;
+	color:#ddd;
+	background: #2C333A;
 }
 
 .close_button {

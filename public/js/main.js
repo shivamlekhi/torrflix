@@ -4,6 +4,13 @@ var containerId = 'player';
 var Video = 'abc123';
 
 $(document).ready(function() {
+   // var total_pages = $('#last_page').text(). ;
+   // $('#movie_pagination').twbsPagination({
+   //      totalPages: total_pages,
+   //      visiblePages: 7,
+   //      href: '/home?page={{number}}'
+   //  });
+
    $(document).on('click', '.close_button', function() {
       $('.video_overlay').fadeOut();
 

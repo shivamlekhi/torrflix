@@ -5,10 +5,11 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/style-313.css">
 		<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+		<title>Torrflix</title>
 	</head>
 
 	<body>
-		<nav class="navbar navbar-default" role="navigation">
+		{{-- <nav class="navbar navbar-default" role="navigation">
 			<a class="navbar-brand" href="#">TorrFlix</a>
 			<ul class="nav navbar-nav">
 				<li class="active">
@@ -37,14 +38,13 @@
 				</li>
 			</ul>		
 			@endif
-		</nav>
-		<div class="col-md-10 col-md-offset-1">
-			@yield('content')
-		</div>
+		</nav> --}}
+		
+		@yield('content')
+
 		<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
 		<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/jquery.twbsPagination.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
-		<script type="text/javascript" src="js/jquery.fancybox.js"></script>
-		<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
 	</body>
 </html>
